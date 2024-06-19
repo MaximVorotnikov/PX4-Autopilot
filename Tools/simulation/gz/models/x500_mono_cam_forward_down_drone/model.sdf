@@ -1,0 +1,42 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.9'>
+  <model name='x500_mono_cam_forward_down_drone'>
+    <include merge='true'>
+      <uri>x500</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include merge='true'>
+      <uri>model://mono_cam</uri>
+      <pose>.12 .03 .242 0 0 0</pose>
+      <name>mono_cam</name>
+    </include>
+    <include merge='true'>
+      <uri>model://mono_cam_down</uri>
+      <pose>.06 .03 .242 0 90 0</pose>
+      <name>mono_cam_down</name>
+    </include>
+    <include merge='true'>
+      <uri>model://depth_cam_drone</uri>
+      <pose>.12 .01 .242 0 0 0</pose>
+      <name>depth_cam_drone</name>
+    </include>
+
+    <joint name="CameraForwardJoint1" type="fixed">
+      <parent>base_link</parent>
+      <child>mono_cam/base_link</child>
+      <pose relative_to="base_link">.12 .03 .242 0 0 0</pose>
+    </joint>
+    <joint name="CameraDownJoint1" type="fixed">
+      <parent>base_link</parent>
+      <child>mono_cam_down/base_link</child>
+      <pose relative_to="base_link" degrees="true">.06 .03 .242 0 0 0</pose>
+    </joint>
+    <joint name="CameraDepthJoint1" type="fixed">
+      <parent>base_link</parent>
+      <child>depth_cam_drone/base_link</child>
+      <pose relative_to="base_link" degrees="true">.12 .01 .242 0 0 0</pose>
+    </joint>
+  </model>
+
+
+</sdf> -->
